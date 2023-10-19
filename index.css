@@ -19,23 +19,29 @@ input{
     background-color: #fff;
     font-family: inherit;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    min-width: 300px;
     font-size: 1rem;
-    /* transition: width 0.4s ease-in-out; */
+    width: 50%;
 }
 input:focus{
     outline: none;
-    /* width: 50%; */
+    border: 2px solid blue;
+    width: 100%;
+    transition: width 0.4s ease-in-out;
+}
+input:hover {
+    border: 2px solid greenyellow;
 }
 .weather{
     text-align: center;
     font-size: 2rem ;
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 .weather h2{
     margin-bottom: 0;
     display: flex;
     align-items: center;
 }
-/* .weather img{
-    transform: scale(2);
-} */
+.weather img{
+    transform: scale(1.5);
+}
